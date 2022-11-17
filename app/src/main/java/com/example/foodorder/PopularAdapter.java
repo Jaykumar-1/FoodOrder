@@ -34,7 +34,7 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.ViewHold
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int  position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.title.setText(PopularFood.get(position).getTitle());
         holder.fee.setText(String.valueOf(PopularFood.get(position).getFees()));
 
